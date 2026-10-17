@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIÊN HỆ ĐẶT BÀN</title>
+    <link rel="stylesheet" href="./CSS/lienhe.css">
+</head>
+<body>
+    <header>
+      <img src="./Image/logoquan.jpg" width="100px">
+        <h1>Phiếu Dặt Bàn & Phòng </h1>
+    </header>
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+        <a href="./thucdon.html" target="_blank">Thực Đơn</a>
+        <a href="./khamphapet.html" target="_blank">Khám Phá PET</a>
+        <a href="./datban.html" target="_blank">Dặt Bàn</a>
+        <a href="./vechungtoi.html" target="_blank">Về Chúng Tôi</a>
+    </nav>
+    <main>
+ <form>
+              <table border="1" width="100%" cellpadding="8" cellspacing="0">
+                <tr>
+                  <td width="30%">
+                    <label for="fullName"><b>Họ và tên:</b></label>
+                  </td>
+                  <td width="40%">
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="Nhập họ và tên"
+                      required
+                      style="width: 80%; padding: 5px"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="phoneNumber"><b>Số điện thoại:</b></label>
+                  </td>
+                  <td>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      placeholder="Nhập số điện thoại"
+                      required
+                      style="width: 80%; padding: 5px"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="Date"><b>Ngày & Giờ đến:</b></label>
+                  </td>
+                  <td>
+                    <input
+                      type="datetime-local"
+                      id="Date"
+                      name="Date"
+                      style="padding: 5px"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="guestCount"><b>Số lượng khách:</b></label>
+                  </td>
+                   <td>
+                    <select id="sothucung" name="sothucung">
+                        <option value="2">2 Người</option>
+                        <option value="3">3 Người</option>
+                        <option value="4">4 Người</option>
+                        <option value="5">5 Người</option>
+                    </select>
+                </td>
+                <tr>
+                  <td valign="top">
+                    <label for="dishes"><b>Chọn món trước:</b></label>
+                  </td>
+                  <td>
+                    <select
+                      id="dishes"
+                      name="dishes"
+                      size="5"
+                      multiple
+                      style="width: 85%; padding: 5px"
+                    >
+                      <optgroup label="--- Đồ uống ---">
+                        <option value="cp-coffe">Cà phê muối nắp Size Lớn (42.000VNĐ)</option>
+                        <option value="cp-coffe">Cappuccino Mèo Béo Size Lớn (45.000VNĐ)</option>
+                        <option value="cp-coffe">Bạc xỉu dâu chân Size Lớn (38.000VNĐ)</option>
+                        <option value="tra-dao">Trà đào cam sả Size Lớn (30000)</option>
+                        <option value="tra-vai">Trà dâu tằm mèo béo Size Lớn (30000)</option>
+                        <option value="tra-chanh">Matcha Latte sữa yến mạch Size Lớn (25000)</option>
+                        <option value="matcha-latte">Combo 1  (63.000VNĐ/55.000VNĐ)</option>
+                        <option value="vanilla-latte">Combo 2 (95.000VNĐ/79.000VNĐ)</option>
+                        <option value="vanilla-latte">Combo 3 (139.000VNĐ/119.00VNĐ)</option>
+                      </optgroup>
+                    </select>
+                    <br /><small style="color: #666"
+                      >*(Giữ phím <b>Ctrl</b> để chọn nhiều món cùng
+                      lúc)*</small
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <label for="note"><b>Ghi chú thêm:</b></label>
+                  </td>
+                  <td>
+                    <textarea
+                      id="note"
+                      name="note"
+                      rows="3"
+                      style="width: 85%; padding: 5px"
+                      placeholder="Yêu cầu thêm"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+<td colspan="2" align="center" style="padding-top: 15px">
+                    <input
+                      type="submit"
+                      value="XÁC NHẬN ĐẶT BÀN"
+                      onclick="
+                        alert('Đơn đặt bàn của bạn đã được gửi thành công!')
+                      "
+                      style="
+                        background-color: #000000;
+                        color: white;
+                        padding: 10px 25px;
+                        border: none;
+                        font-weight: bold;
+                        cursor: pointer;
+                        border-radius: 4px;
+                      "
+                    />
+                    <input
+                      type="reset"
+                      value="Nhập lại"
+                      style="
+                        padding: 10px 15px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </form>
+    </main>
+    <footer>
+        <p>Địa Chỉ : 520 Đường Mèo , TP.HCM | SĐT : 0712 054 279 | Mở Của Từ : 8:00 - 20:00 Hàng Ngày </p>
+    </footer>
+    <script>
+alert("Quý Khách Ghi Thông Tin Cá Nhân Và Thức Uống ");
+</script>
+</body>
+</html>
